@@ -146,8 +146,8 @@ export const getUserData = () => {
 
 export const updateProfile = (data) => {
     return apiCallBegan({
-        url: usersUrl + "/update",
-        method: "post",
+        url: usersUrl,
+        method: "put",
         data: data,
         onStart: userUpdateRequestSent.type,
         onSuccess: userUpdateRequestSuccessful.type,
