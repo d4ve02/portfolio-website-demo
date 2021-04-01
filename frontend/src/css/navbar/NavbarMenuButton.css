@@ -1,0 +1,24 @@
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-collapse:focus {
+    outline: none;
+}
+
+.fa-bars {
+    color: var(--transparent-light-color);
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 760px) {
+    .navbar-collapse {
+        display: block;
+
+        margin: 15px;
+        margin-right: 10px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+    }
+}

@@ -1,0 +1,55 @@
+.ratingFilter {
+    padding: 10px;
+}
+
+.ratingLine {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.ratingLine span {
+    font-size: 0.9rem;
+    margin-right: 10px;
+    color: var(--transparent-light-color);
+}
+
+.ratingUnchecked span {
+    color: var(--extremely-transparent-light-color);
+}
+
+.ratingCheck {
+    -webkit-appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--transparent-light-color);
+    outline: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 3px;
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.ratingCheck:checked {
+    -webkit-appearance: none;
+    background-color: var(--transparent-light-color);
+    position: relative;
+}
+
+.ratingCheck:checked::after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-size: 0.9rem;
+    font-weight: 900;
+
+    color: var(--transparent-dark-color);
+}

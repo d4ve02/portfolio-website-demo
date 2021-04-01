@@ -1,0 +1,39 @@
+.footer-li {
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-icons {
+    position: relative;
+
+    width: 1.2rem;
+
+    margin-right: 13px;
+
+    font-size: 1.2rem;
+    text-align: center;
+
+    transition: color 0.3s ease, transform 0.5s ease;
+}
+
+.footer-li:hover .footer-icons {
+    transform: rotate(360deg);
+}
+
+.footer-link {
+    color: var(--transparent-light-color);
+
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .footer-li {
+        justify-content: center;
+    }
+}

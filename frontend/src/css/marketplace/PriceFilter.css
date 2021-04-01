@@ -1,0 +1,56 @@
+.priceFilter {
+    padding: 10px;
+
+    display: grid;
+
+    grid-template-columns: max-content auto 3.2rem;
+    column-gap: 10px;
+    row-gap: 8px;
+    align-items: center;
+
+    font-size: 0.9rem;
+    color: var(--transparent-light-color);
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.priceSlide {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+
+    border-radius: 10px;
+
+    border: 2px solid var(--transparent-light-color);
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+
+    cursor: pointer;
+}
+
+.priceSlide::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--transparent-light-color);
+    cursor: pointer;
+}
+
+.priceSlide::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: none;
+    background: var(--transparent-light-color);
+    cursor: pointer;
+}
+
+.priceValue {
+    text-align: center;
+}

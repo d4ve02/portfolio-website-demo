@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.main {
+    position: relative;
+
+    background-color: none;
+}
+
+@keyframes wallpaperAnimation {
+    0% {
+        filter: saturate(1);
+    }
+
+    50% {
+        filter: saturate(2);
+    }
+
+    100% {
+        filter: saturate(1);
+    }
+}
+
+.wallpaper {
+    position: fixed;
+
+    width: 100%;
+    height: 100vh;
+
+    animation: wallpaperAnimation 8s ease infinite;
+}
+
+.mainContent {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --transparent-dark-color: rgba(17, 23, 27, 0.9);
+    --very-transparent-dark-color: rgba(17, 23, 27, 0.7);
+    --less-transparent-dark-color: rgba(17, 23, 27, 0.95);
+    --transparent-red-color: rgba(230, 61, 61, 0.9);
+    --transparent-green-color: rgba(109, 230, 61, 0.9);
+    --transparent-orange-color: rgba(230, 123, 61, 0.9);
+    --dark-color: rgba(17, 23, 27, 1);
+    --light-color: rgba(220, 220, 220, 1);
+    --transparent-blue-color: rgba(46, 169, 250, 0.9);
+    --transparent-dark-blue-color: rgb(12, 16, 19);
+    --transparent-light-color: rgba(245, 245, 245, 0.9);
+    --very-transparent-light-color: rgba(245, 245, 245, 0.7);
+    --extremely-transparent-light-color: rgba(245, 245, 245, 0.3);
+}

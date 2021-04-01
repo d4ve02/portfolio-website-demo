@@ -1,0 +1,237 @@
+.dashboard {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--dark-color);
+}
+
+.dashboardTitle {
+    font-size: 2.4rem;
+
+    text-align: center;
+
+    margin-bottom: 0px;
+}
+
+.balance {
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    margin-top: 0px;
+}
+
+.topSectionDashboard {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+.orderSection {
+    flex: 1 1 0;
+
+    width: 100%;
+
+    margin-bottom: 30px;
+}
+
+.sectionTitle {
+    font-size: 1.4rem;
+    text-align: center;
+
+    margin: 0px;
+}
+
+.nothingToSee {
+    text-align: center;
+    color: var(--transparent-dark-color);
+    font-size: 1.4rem;
+
+    padding-top: 0.5rem;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.cartList,
+.orderList,
+.soldList {
+    width: 95%;
+
+    margin: auto;
+    margin-top: 10px;
+
+    display: grid;
+}
+.cartList {
+    grid-template-columns: 60px auto max-content max-content max-content;
+}
+
+.orderList {
+    grid-template-columns: 60px auto max-content max-content max-content max-content;
+}
+
+.soldList {
+    grid-template-columns: 60px auto max-content max-content max-content;
+}
+
+.breaking {
+    border-left: 2px dashed var(--transparent-light-color);
+}
+
+.orderCell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--very-transparent-light-color);
+
+    margin: 3px 0px;
+    padding: 0px 10px;
+
+    text-align: left;
+
+    transition: filter 0.5s ease, border 0.2s ease-in;
+
+    animation: appear 0.5s ease forwards;
+}
+
+@keyframes appear {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(1);
+    }
+}
+
+.headerCell {
+    font-weight: 600;
+}
+
+.noBackground {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.cartList *:nth-child(5n + 6),
+.orderList *:nth-child(6n + 7),
+.soldList *:nth-child(5n + 6) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.cartList *:nth-child(5n + 10),
+.orderList *:nth-child(6n + 12),
+.soldList *:nth-child(5n + 10) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.status {
+    font-size: 1rem;
+}
+
+.orderCell .disabled {
+    filter: opacity(0.5);
+
+    cursor: auto;
+}
+
+.orderCell .disabled:hover {
+    background-color: var(--transparent-dark-color);
+}
+
+.canceled {
+    color: var(--transparent-red-color);
+}
+
+.ordered,
+.completed {
+    color: var(--transparent-dark-color);
+}
+
+.orderImage {
+    width: 50px;
+    height: 45px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.ordersButton {
+    width: 30px;
+    height: 30px;
+
+    color: var(--transparent-light-color);
+    background-color: var(--transparent-dark-color);
+
+    border-radius: 7px;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: background-color 0.15s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noPadding {
+    padding: 0px;
+}
+
+@media screen and (max-width: 1100px) {
+    .topSectionDashboard {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .orderCell {
+        padding: 0px;
+    }
+
+    .orderCell button {
+        margin: 5px;
+    }
+
+    .cartList {
+        grid-template-columns: 0px auto max-content max-content max-content;
+    }
+
+    .orderList {
+        grid-template-columns: 0px auto max-content max-content max-content max-content;
+    }
+
+    .soldList {
+        grid-template-columns: 0px auto max-content max-content max-content;
+    }
+
+    .orderImage {
+        display: none;
+    }
+
+    .cartList *:nth-child(5n + 7),
+    .orderList *:nth-child(6n + 8),
+    .soldList *:nth-child(5n + 7) {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding-left: 5px;
+        font-size: 0.9rem;
+    }
+
+    .cartList *:nth-child(5n + 10),
+    .orderList *:nth-child(6n + 12),
+    .soldList *:nth-child(5n + 10) {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-right: 5px;
+    }
+}

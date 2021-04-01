@@ -1,0 +1,16 @@
+.products {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 15px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    padding: 7px 0px;
+
+    border-radius: 15px;
+}

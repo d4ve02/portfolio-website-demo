@@ -1,0 +1,69 @@
+.contentHider {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.15s ease, filter 0.15s ease;
+}
+
+.toast {
+    display: flex;
+    flex-direction: column;
+
+    width: calc(90% - 40px);
+    max-width: 660px;
+    padding: 20px;
+
+    margin-bottom: 30vh;
+
+    color: var(--transparent-light-color);
+    background-color: var(--transparent-dark-color);
+    border-radius: 20px;
+}
+
+.toastContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toastContent i {
+    font-size: 2.5rem;
+    padding: 0px 20px;
+}
+
+.toastContent p {
+    padding: 0px 20px;
+
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.toast button {
+    color: var(--transparent-light-color);
+    background-color: var(--dark-color);
+
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+
+    border-radius: 7px;
+    margin: 15px 15px 5px auto;
+
+    border: 1px solid var(--transparent-blue-color);
+    outline: none;
+
+    cursor: pointer;
+
+    transition: border 0.15s ease;
+}
+
+.toast button:hover {
+    border-color: var(--transparent-green-color);
+}

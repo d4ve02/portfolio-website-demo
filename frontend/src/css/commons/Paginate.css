@@ -1,0 +1,48 @@
+.paginate {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+
+    min-height: 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    background-color: var(--transparent-light-color);
+
+    border-radius: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    margin: 0px 5px;
+
+    background-color: var(--dark-color);
+
+    position: relative;
+
+    transition: width 0.15s ease, margin 0.15s ease;
+
+    cursor: pointer;
+}
+
+.active {
+    width: 18px;
+    height: 18px;
+
+    margin: 0px 2.5px;
+
+    position: relative;
+
+    background-color: var(--transparent-blue-color);
+}

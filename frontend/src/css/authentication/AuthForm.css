@@ -1,0 +1,56 @@
+.authTitle {
+    color: var(--transparent-light-color);
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+}
+
+.formSectionBreak {
+    width: 45%;
+
+    border-color: rgba(245, 245, 245, 0.8);
+
+    margin-top: calc(1.6rem - 7px);
+    margin-bottom: 1.6rem;
+}
+
+.formSuggestion {
+    color: var(--transparent-light-color);
+    font-size: 0.85rem;
+    font-weight: 200;
+    letter-spacing: 0.03rem;
+    margin-top: 1rem;
+}
+
+.signInLink {
+    color: var(--transparent-light-color);
+
+    margin-left: 0.5rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.buttonDesignOne,
+.buttonDesignTwo {
+    position: relative;
+    height: 5rem;
+    transform: rotate(35deg);
+
+    background-color: var(--transparent-light-color);
+}
+
+.buttonDesignOne {
+    bottom: 3.2rem;
+    left: 85%;
+
+    width: 20px;
+}
+
+.buttonDesignTwo {
+    bottom: 8.2rem;
+    left: 80%;
+
+    width: 7px;
+}

@@ -1,0 +1,16 @@
+.protected {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.protected h1 {
+    font-size: 2.2rem;
+
+    text-align: center;
+
+    color: var(--dark-color);
+}

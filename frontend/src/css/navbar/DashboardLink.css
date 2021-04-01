@@ -1,0 +1,67 @@
+.dashboardLink {
+    position: relative;
+    top: 2px;
+
+    color: var(--transparent-light-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    margin: 20px;
+    margin-right: 28px;
+}
+
+.shopping-cart-items {
+    position: absolute;
+    top: -0.55rem;
+    right: -0.55rem;
+
+    background-color: #3282b8;
+
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+}
+
+.sold-items-pending {
+    position: absolute;
+    bottom: -0.4rem;
+    right: -0.55rem;
+
+    background-color: #6eb832;
+
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+}
+
+.shopping-cart-items-count {
+    position: relative;
+    top: 0.15rem;
+    left: 0.01rem;
+
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-size: 0.8rem;
+
+    text-align: center;
+}
+
+.sold-items-pending-count {
+    position: relative;
+    top: 0.15rem;
+    left: 0.01rem;
+
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-size: 0.8rem;
+
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    .shoppingCart {
+        margin: 10px;
+    }
+}

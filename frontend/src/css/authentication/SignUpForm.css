@@ -1,0 +1,28 @@
+.signup {
+    width: 100vw;
+    height: calc(100vh);
+
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupForm {
+    width: calc(95% - 40px);
+    max-width: 650px;
+
+    padding: 1rem 20px;
+
+    background-color: var(--transparent-dark-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

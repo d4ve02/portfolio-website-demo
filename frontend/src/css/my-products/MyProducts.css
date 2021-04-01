@@ -1,0 +1,47 @@
+.productsTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myProductsTitle {
+    font-size: 2.2rem;
+
+    text-align: center;
+
+    color: var(--dark-color);
+
+    margin-bottom: 7px;
+}
+
+.addNewProduct {
+    color: var(--transparent-light-color);
+    background-color: var(--transparent-dark-color);
+
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+
+    border-radius: 7px;
+
+    margin-top: auto;
+    margin-bottom: 15px;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    cursor: pointer;
+
+    transition: border 0.15s ease;
+}
+
+.addNewProduct:hover {
+    border-color: var(--transparent-blue-color);
+}
+
+.myProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex-grow: 1;
+}
