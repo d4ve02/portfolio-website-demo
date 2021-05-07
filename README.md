@@ -1,5 +1,3 @@
-[![Website Logo](https://davide-halili-portfolio.herokuapp.com/wallpapers/readmeDavideHalili.png)](https://davide-halili-portfolio.herokuapp.com)
-
 ## :bulb: Who am I and why I made this website
 
 My name is Davide Halili, I'm 18, I live in Italy and I love programming :)
