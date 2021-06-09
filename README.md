@@ -8,7 +8,7 @@ I definitely have a lot to learn and I'm still a beginner, but it's time to turn
 
 ## :scroll: Small Guide
 
-The project's goal was to built an ecommerce website to showcase my skills while also practicing the tools I learned. You can find more information about the tools used below. The project is currently hosted on https://davide-halili-portfolio.herokuapp.com.
+The project's goal was to built an ecommerce website to showcase my skills while also practicing the tools I learned. You can find more information about the tools used below. The project is currently hosted on https://davide-halili-ecommerce-demo.herokuapp.com.
 
 ## Installation
 
